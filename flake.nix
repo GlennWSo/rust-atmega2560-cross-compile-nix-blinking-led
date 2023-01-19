@@ -11,6 +11,7 @@
     in
     {
       devShells.${system}.default = pkgs.mkShell {
+        name = "avr-zone";
         buildInputs = [
           pkgs.pkgsCross.avr.buildPackages.gcc
           pkgs.avrdude
